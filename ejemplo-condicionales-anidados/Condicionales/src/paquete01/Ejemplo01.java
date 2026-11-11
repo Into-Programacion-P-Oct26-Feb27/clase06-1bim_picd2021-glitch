@@ -42,5 +42,8 @@ public class Ejemplo01 {
         }
 
     }
+    /* el usuario debe ingresar el numero 1 para que el condicional evalue si 
+    esta en las opciones permitidas y muestre el mensaje "Trabajar con AND"
+    */
 
 }
