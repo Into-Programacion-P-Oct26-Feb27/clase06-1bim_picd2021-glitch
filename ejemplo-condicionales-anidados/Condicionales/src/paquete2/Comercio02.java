@@ -21,6 +21,7 @@ public class Comercio02 {
         String nombre;
         String apellido;
         String region;
+        String nombreComercio;
         int edad;
         double sueldoBasico;
         int numeroProductos;
@@ -45,6 +46,8 @@ public class Comercio02 {
         edad = entrada.nextInt();
         System.out.println("Ingrese su región de residencia");
         region = entrada.nextLine();
+        System.out.println("Ingrese el nombre de su comercio");
+        nombreComercio = entrada.nextLine();
 
         System.out.println("Ingrese el sueldo básico por favor");
         sueldoBasico = entrada.nextDouble();
@@ -90,7 +93,7 @@ public class Comercio02 {
         adicionalSeguro = (sueldoBasico * porcentajeSeguro) / 100;
         sueldoFinal = adicionalSeguro + bono + sueldoBasico;
 
-        System.out.printf("Reporte de Empleado EL GRAN COMERCIO\n\n"
+        System.out.printf("Reporte de Empleado %s\n\n"
                 + "Nombres: %s\n"
                 + "Apellidos: %s\n"
                 + "Edad: %d\n"
@@ -99,7 +102,7 @@ public class Comercio02 {
                 + "\tProductidad: %.2f\n"
                 + "\tBono: $%.2f\n"
                 + "Adicional del seguro: $%.2f\n\n"
-                + "Sueldo final: $%.2f\n",
+                + "Sueldo final: $%.2f\n", nombreComercio,
                 nombre,
                 apellido,
                 edad,
